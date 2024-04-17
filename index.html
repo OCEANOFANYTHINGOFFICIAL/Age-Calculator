@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="OCEAN OF ANYTHING">
+        <meta name="description"
+            content="The Age Calculator is a web application that allows users to calculate their age based on their birthdate.">
+        <meta name="keywords"
+            content="Age Calculator, Age, Calculator, Calculate Age, Calculate, Age, Ocean of Anything, OceanOfAnything">
+        <meta name="robots" content="index, follow">
+        <meta name="revisit-after" content="3 days">
+        <meta name="language" content="English">
+        <meta name="rating" content="5">
+        <meta name="distribution" content="global">
+        <meta name="theme-color" content="#000000">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@OceanAnything">
+        <meta name="twitter:creator" content="@OceanAnything">
+        <meta property="og:url" content="https://oceanofanythinofficial.github.io/Age-Calculator/">
+        <meta property="og:title" content="Age Calculator">
+        <meta property="og:description"
+            content="The Age Calculator is a web application that allows users to calculate their age based on their birthdate.">
+        <meta property="og:image" content="https://oceanofanythinofficial.github.io/Age-Calculator/preview.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="Age Calculator">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Age Calculator">
+        <title>Age Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+    </head>
+
+    <body>
+        <div class="card">
+            <header>
+                <h1>AGE CALCULATOR</h1>
+            </header>
+
+            <div class="dateOne">
+                <label>Date of Birth</label>
+
+                <input id="inputDob" type="date" value="2000-01-01" />
+            </div>
+            <br />
+
+            <!-- Take the date from which age is to be calculated -->
+            <div class="dateTwo">
+                <label class="currentDate">Current
+                    Date </label>
+
+                <input id="cdate" type="date" value />
+            </div>
+            <br />
+
+            <div class="myBtn">
+                <button type="button" class="controlBtn" onclick="getDOB()">
+                    Calculate
+                </button>
+                <button type="button" class="controlBtn" onclick="resetFields()">Reset</button>
+            </div>
+
+            <br />
+            <div id="currentAge">
+                <div class="result" id="year">Years</div>
+                <div class="result" id="month">Months</div>
+                <div class="result" id="days">Days</div>
+            </div>
+            <script src="script.js"></script>
+        </div>
+    </body>
+
+</html>
